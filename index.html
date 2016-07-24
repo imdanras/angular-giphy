@@ -26,10 +26,10 @@
         <button type="submit" class="btn btn-primary" ng-click="searchGiphy()">Search</button>
       </form>
 
-      <div id="results" ng-repeat="myvar in giphy track by $index">
-      <div class="well">
-          <img ng-src="{{ myvar.images.fixed_height.url }}"> </div>
-      </div>
+      <span id="results" ng-repeat="myvar in giphy track by $index">
+      <span>
+          <img ng-src="{{ myvar.images.fixed_width.url }}"> </span>
+      </span>
     </div>
   </body>
 </html>
