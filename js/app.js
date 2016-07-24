@@ -4,13 +4,6 @@
   $scope.search = '';
   $scope.searchGiphy = searchGiphy
 
-  $scope.path = function() {
-    for (var i = 0; i < data.length; i++) {
-      return data[i].length.fixed_height.url;
-    }
-}
-
-
 function searchGiphy() {
   console.log('success!')
   $http.get('http://api.giphy.com/v1/gifs/search?q=' +
